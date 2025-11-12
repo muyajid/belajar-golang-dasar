@@ -55,4 +55,13 @@ func main() {
 	default:
 		fmt.Println("Ini hari apa ini")
 	}
+
+	// switch short statement 
+	label := "1234"
+	switch length := len(label); length < 5 {
+	case true:
+		fmt.Println("Panjang label kurang")
+	case false:
+		fmt.Println("Valid")
+	}
 }
